@@ -1,0 +1,86 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+.square {
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	transition: background 0.6s;
+	/* Two more properties for Browser support of transitions */
+	-webkit-transition: background 0.6s;
+	-mox-transition: background 0.6s;
+}
+
+#container {
+	/* this trick allows you to center the container! */
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+h1 {
+	color: white;
+	line-height: 1.1;
+	text-align: center;
+	background: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	/* adds padding to top and bottom */
+	padding: 20px 0;
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+/* span {
+	color: white;
+	/* need to change the color here in span, not in stripe because of SPECIFICITY! */
+/* } */
+
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+#stripe {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	background: blue;
+	color: white;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	/* will take up 100% of containing element */
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	/* anytime a property changes (color and bg color) it will take two seconds */
+	transition: all 0.3s;
+	/* Two more properties for Browser support of transitions */
+	-webkit-transition: all 0.3s;
+	-mox-transition: all 0.3s;
+	/* Turn off the blue outline in the browser */
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
